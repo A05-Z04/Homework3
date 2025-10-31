@@ -27,4 +27,4 @@ If you’d like to test this project on your own computer, follow these steps:
 1. Create a free account at [The Movie Database](https://www.themoviedb.org/).  
 2. Request your own API key under your profile → **Settings → API**.  
 3. In the project’s root folder, create a file named: .env.local
-4. 4. Add this single line inside: REACT_APP_TMDB_KEY=YOUR_TMDB_API_KEY_HERE  
+4. Add this line inside: REACT_APP_TMDB_KEY=YOUR_TMDB_API_KEY_HERE  
