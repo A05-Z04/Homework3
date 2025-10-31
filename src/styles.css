@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3; 
+}
+
+.header {
+  background-color: #0d2c54;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.controls {
+  background-color: #1d3f7a;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0; 
+}
+
+.control-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 90%;
+  max-width: 600px;
+}
+
+#searchInput {
+  flex: none;
+  width: 180px;
+  padding: 8px;
+  border: none;
+  border-radius: 0; 
+  font-size: 14px;
+  background-color: white;
+  color: #333;
+}
+
+.dropdown {
+  position: relative;
+}
+
+#sortButton {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  text-align: left;
+}
+
+#sortButton.active {
+  background-color: #ddd;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background-color: #333;
+  color: white;
+  border-radius: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.menu-title {
+  padding: 8px 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #555;
+}
+
+.menu-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #555;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px 5px; 
+  padding: 30px;
+  justify-items: center;
+}
+
+.movie-card {
+  background-color: white;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.movie-card img {
+  width: 90%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.movie-card h3 {
+  font-size: 12px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.movie-card p {
+  font-size: 10px;
+  margin: 4px 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.pagination button {
+  background-color: #3b7dd8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pagination button:hover {
+  background-color: #2a63b5;
+}
+
+#pageInfo {
+  font-size: 14px;
+  color: #333;
+}
